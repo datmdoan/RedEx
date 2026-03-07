@@ -1,0 +1,23 @@
+# Pre-training config for GIN (HPO-optimised)
+
+train:
+  num_epochs: 500
+  lr: 3.490e-3
+  weight_decay: 4.717e-5
+  patience: 50
+  task: regression
+  seed: 42
+
+model:
+  input_dim: 74
+  hidden_dim: 128
+  output_dim: 1
+  num_layers: 4
+  dropout: 1.333e-3
+  pooling: sigmoid_weighted
+  activation: relu
+
+data:
+  batch_size: 64
+  num_workers: 2
+  pin_memory: true

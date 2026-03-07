@@ -1,0 +1,24 @@
+# Pre-training config for GraphSAGE (HPO-optimised)
+
+train:
+  num_epochs: 500
+  lr: 4.792e-3
+  weight_decay: 1.192e-5
+  patience: 50
+  task: regression
+  seed: 42
+
+model:
+  input_dim: 74
+  hidden_dim: 64
+  output_dim: 1
+  num_layers: 4
+  dropout: 1.376e-3
+  pooling: sigmoid_weighted
+  activation: relu
+  aggr: max
+
+data:
+  batch_size: 64
+  num_workers: 2
+  pin_memory: true

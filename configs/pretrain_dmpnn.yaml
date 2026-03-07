@@ -1,0 +1,23 @@
+# Pre-training config for D-MPNN (HPO-optimised)
+
+train:
+  num_epochs: 500
+  lr: 2.179e-3
+  weight_decay: 5.261e-5
+  patience: 50
+  task: regression
+  seed: 42
+
+model:
+  input_dim: 74
+  hidden_dim: 64
+  output_dim: 1
+  num_layers: 3        # controls message-passing depth for D-MPNN
+  dropout: 6.877e-3
+  pooling: sigmoid_weighted
+  activation: relu
+
+data:
+  batch_size: 64
+  num_workers: 2
+  pin_memory: true
