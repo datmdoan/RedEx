@@ -289,7 +289,7 @@ def main():
                     choices=["gcn", "gat", "gin", "graphsage", "dmpnn"])
     ap.add_argument("--pretrained", required=True, help="Path to .pth checkpoint")
     ap.add_argument("--config", default=None, help="YAML config (overrides defaults)")
-    ap.add_argument("--exp-data", default="data/raw/Experimental_redox_potentials.csv")
+    ap.add_argument("--exp-data", default="data/Experimental_redox_potentials.csv")
     ap.add_argument("--output-dir", default=None)
     ap.add_argument("--lr", type=float, default=None)
     ap.add_argument("--batch-size", type=int, default=None)

@@ -49,7 +49,7 @@ Or from a CSV (needs an `oxidised_smiles` column):
 ```bash
 python scripts/predict.py \
     --model-dir weights/finetuned/gat_partial \
-    --csv data/raw/Experimental_redox_potentials.csv \
+    --csv data/Experimental_redox_potentials.csv \
     --output predictions.csv
 ```
 

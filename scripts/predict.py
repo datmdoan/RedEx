@@ -12,7 +12,7 @@ Usage
     # Predict from a CSV (must have an 'oxidised_smiles' column)
     python scripts/predict.py \\
         --model-dir weights/finetuned/gat_partial \\
-        --csv data/raw/Experimental_redox_potentials.csv \\
+        --csv data/Experimental_redox_potentials.csv \\
         --output predictions.csv
 """
 

@@ -161,7 +161,7 @@ def main():
     ap.add_argument("--model", choices=["gcn", "gat", "gin", "graphsage", "dmpnn"])
     ap.add_argument("--all", action="store_true", help="Train all models")
     ap.add_argument("--config", help="Override config path (default: per-model)")
-    ap.add_argument("--data", default="data/raw/RedoxDB_Complete.csv")
+    ap.add_argument("--data", default="data/RedoxDB_Complete.csv")
     ap.add_argument("--output-dir", default="weights/pretrained")
     ap.add_argument("--val-ratio", type=float, default=0.1)
     ap.add_argument("--seed", type=int, default=42)
