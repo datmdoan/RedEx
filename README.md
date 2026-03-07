@@ -1,6 +1,8 @@
 # RedEx
 
-Predicting experimental redox potentials for aqueous organic molecules using graph neural networks with transfer learning.
+Predicting experimental redox potentials for aqueous organic molecules using GNNs with transfer learning. 
+
+RedEx is a GAT ensemble, pre-trained on computational DFT-calculated redox potentials and fine-tuned on experimental redox potentials curated from the literature. 
 
 ## Installation
 
