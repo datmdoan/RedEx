@@ -1,0 +1,15 @@
+name: redex
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - scikit-learn
+  - pip
+  - pip:
+      - numpy>=1.24
+      - pandas>=2.0
+      - pyyaml>=6.0
+      - rdkit>=2023.03
+      - torch>=2.0
+      - torch-geometric>=2.4
