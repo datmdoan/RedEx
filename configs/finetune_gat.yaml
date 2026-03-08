@@ -1,22 +1,21 @@
-# Fine-tuning configuration for RedEx (GAT best settings)
-# Transfer learning from pre-trained model to experimental data
+# Fine-tuning configuration for RedEx 
 
 train:
   num_epochs: 500
-  lr: 0.00292             # HPO-optimised for GAT
-  weight_decay: 1.65e-5
+  lr: 0.002746             
+  weight_decay: 2.41e-5
   patience: 30
   task: regression
   seed: 42
-  batch_size: 16
+  batch_size: 64
 
 freeze:
-  strategy: top_layers    # freeze bottom layers, train top + readout + head
+  strategy: top_layers   
   freeze_ratio: 0.5       # proportion of conv layers to freeze
 
 model:
-  # These values are read from the checkpoint; override only dropout here
-  dropout: 0.047
+  
+  dropout: 0.053
 
 cv:
   n_folds: 5
